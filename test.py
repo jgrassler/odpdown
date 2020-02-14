@@ -239,7 +239,7 @@ def test_weird_uris():
 
 '''.strip()
     mkdown.render(markdown)
-    assert u'Pictures/odpdown_image_0.svg' in testdoc.get_part(
+    assert 'Pictures/odpdown_image_0.svg' in testdoc.get_part(
         ODF_MANIFEST).get_paths()
 
 
